@@ -13,6 +13,10 @@ unzip ml-100k.zip
 unzip ml-1m.zip
 unzip ml-latest.zip
 
+#--PERMISSIONS
+cd ..
+chmod -R 777 $DIRX
+
 #--CREATE DIRECTORIES FOR 100 , MILLION LATEST
 hdfs dfs -mkdir -p hackerday_ratings/100k
 hdfs dfs -mkdir -p hackerday_ratings/million
